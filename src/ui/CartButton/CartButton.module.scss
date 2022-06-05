@@ -1,0 +1,43 @@
+@import '../../sass/extends';
+@import '../../sass/variables';
+.cart-button {
+    position: fixed;
+    right: 1rem;
+    top: 0.5rem;
+    z-index: 101;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 4px;
+    &:hover {
+        transform: scale(1.1,1.1);
+        transition: .2s;
+    }
+    .icon {
+        font-size: 25px;
+        color: $color-text-white;
+    }
+    div {
+        border-radius: 50%;
+        color: $color-text-white;
+        background-color: $color-purple;
+        position: absolute;
+        top: 0;
+        left: 35px;
+        font-size: 10px;
+        width: 17px;
+        height: 17px;
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+@media(max-width: 767px) {
+    .cart-button {
+        // top: unset;
+        top: 1.5rem;
+        right: 1rem;
+    }
+}

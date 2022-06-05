@@ -1,0 +1,68 @@
+@import "../../sass/extends";
+@import "../../sass/variables";
+
+.footer {
+  @extend %ex-layout;
+  background-color: $bg-color;
+  color: $color-text-white;
+  flex-wrap: wrap;
+  h5 {
+    font-weight: 500;
+  }
+  span {
+    font-size: 16px;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    &:hover {
+      text-decoration: none;
+      color: $color-text-white !important;
+      transition: 0.2s;
+    }
+    .icon {
+      color: $color-light-green;
+      font-size: 30px;
+      margin-right: 5px;
+    }
+  }
+  .footer-navbar {
+    span {
+      @extend %ex-navbar;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: $color-light-green;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h5 {
+        margin: 0;
+      }
+    }
+    .icons {
+      flex-direction: row;
+      margin-top: 7px;
+    }
+    .footer-navbar {
+      flex-direction: row;
+      margin-top: 7px;
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+}

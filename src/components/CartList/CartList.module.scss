@@ -1,0 +1,44 @@
+@import "../../sass/variables";
+
+.cart-list {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 20rem;
+  overflow: auto;
+  h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: $color-text-white;
+    text-shadow: $color-text-shadow;
+  }
+}
+.cart-list-bottom {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .cross {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    font-size: 25px;
+    color: $color-dark-green;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  span {
+    color: $color-light-green;
+    font-size: 18px;
+  }
+  button {
+    border: none;
+    padding: 5px 10px;
+    background-color: $color-purple;
+    color: $color-text-white;
+    border: 1px solid $color-text-white;
+    border-radius: 4px;
+  }
+}

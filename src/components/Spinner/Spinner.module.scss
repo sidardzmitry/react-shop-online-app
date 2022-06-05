@@ -1,0 +1,5 @@
+@import '../../sass/extends';
+
+.size {
+    @extend %sz-spinner;
+  }

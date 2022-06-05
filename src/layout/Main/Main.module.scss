@@ -1,0 +1,15 @@
+@import '../../sass/variables';
+
+.main {
+    overflow: hidden;
+    min-height: calc(100vh - 64px - 76px);
+    margin-top: 64px;
+    padding: 15px;
+    background-color: $color-dark-green;
+  }
+  @media (max-width: 768px){
+    .main{
+      min-height: calc(100vh - 68.4px - 160px);
+      margin-top: 68px;
+    }
+  }
